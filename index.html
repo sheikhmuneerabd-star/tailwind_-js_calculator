@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="history-contain font-serif fixed right-0 top-0 p-1 w-[300px] h-full duration-200 ease-in-out transform transition-transform translate-x-full bg-yellow-200">
+        <div class="flex justify-between p-1">
+            <h2 class="text-3xl text-yellow-700 font-bold">History</h2>
+            <button id="closeHistoryBtn">✖</button>
+        </div>
+        <ul class="historyList mt-2">
+            <li class="ml-4 text-yellow-700 font-bold text-3xl ">2 * 2 = 2</li>
+        </ul>
+    </div>
+    <div class="calculator-contain w-[100%] font-serif h-[100vh] flex items-center">
+        <div class="calculator-box bg-yellow-700 w-[50%] mx-auto p-2 rounded-md">
+            <div class="calculator-box-input border-yellow-700 border-2">
+                <input class="w-[100%] h-[100px] text-[60px] text-right p-2" type="text" id="calsInput" readonly/>
+            </div>
+            <div class="calculator-box-number mt-2 mb-1 space-y-2">
+                <div class="flex grid-cols-4 text-yellow-700 text-xl font-bold">
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">⏲</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">c</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2" id="pBtn">℗</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">⌫</button>
+                </div>
+                <div class="flex grid-cols-4 text-yellow-700 text-xl font-bold">
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">7</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">8</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">9</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">+</button>
+                </div>
+                <div class="flex grid-cols-4 text-yellow-700 text-xl font-bold">
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">4</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">5</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">6</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">-</button>
+                </div>
+                <div class="flex grid-cols-4 text-yellow-700 text-xl font-bold">
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">1</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">2</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">3</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">*</button>
+                </div>
+                <div class="flex grid-cols-4 text-yellow-700 text-xl font-bold">
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">.</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">0</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">=</button>
+                    <button class="w-[100%] p-3 bg-yellow-200 border-yellow-700 hover:bg-yellow-400 transition-all duration-150 rounded-md border-x-2">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
